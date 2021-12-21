@@ -88,8 +88,6 @@ header {
 /* Лого */
 
 .logo {
-  margin-right: 93px;
-
   color: var(--hover-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -109,7 +107,7 @@ header {
 /* Навигация */
 
 .navigation {
-  margin-right: 93px;
+  margin-left: 93px;
 }
 
 .navigation__list,
@@ -240,6 +238,10 @@ header {
 .action-button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.action-button__icon {
+  margin-left: 10px;
 }
 
 /* Cекции */
@@ -554,24 +556,23 @@ header {
 
 /* Подвал */
 
-.footer-box {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer {
+footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--footer-bg);
 }
 
-.footer .logo {
-  display: inline-block;
-  margin-bottom: 20px;
+.footer {
+  display: flex;
+  align-items: baseline;
 }
 
-.address .link {
+.address {
+  margin-top: 20px;
+}
+
+.address__link {
   font-style: normal;
 
   color: var(--footer-text-color);
@@ -582,12 +583,12 @@ header {
   color: var(--white);
 }
 
-.address .link:hover,
-.address .link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--hover-text-color);
 }
 
-.address-item + .address-item {
+.address__item + .address__item {
   margin-top: 9px;
 }
 
@@ -597,8 +598,8 @@ header {
   fill: var(--white);
 }
 
-.join-title,
-.subscribe-title {
+.join__title,
+.subscribe__title {
   display: block;
   margin-bottom: 20px;
 
@@ -607,11 +608,15 @@ header {
   text-transform: uppercase;
 }
 
-.join-list {
+.join__list {
   display: flex;
 }
 
-.join-list .link {
+.join__item + .join__item {
+  margin-left: 10px;
+}
+
+.join__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -624,13 +629,9 @@ header {
   transition: background-color var(--action-time) var(--action-function);
 }
 
-.join-list .link:hover,
-.join-list .link:focus {
+.join__link:hover,
+.join__link:focus {
   background-color: var(--hover-text-color);
-}
-
-.join-list .item + .item {
-  margin-left: 10px;
 }
 
 .subscribe {
@@ -639,16 +640,16 @@ header {
   fill: var(--white);
 }
 
-.subscribe-form {
+.subscribe__form {
   display: flex;
   margin-top: 20px;
 }
 
-.subscribe-label {
+.subscribe__label {
   margin-right: 12px;
 }
 
-.subscribe-input {
+.subscribe__input {
   display: flex;
   align-items: center;
   padding-left: 16px;
@@ -673,21 +674,17 @@ header {
   transition: border var(--action-time) var(--action-function);
 }
 
-.subscribe-input:focus {
+.subscribe__input:focus {
   border: 1px solid var(--hover-text-color);
 }
 
-.subscribe-input::placeholder {
+.subscribe__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
-}
-
-.icon-send {
-  margin-left: 10px;
 }
 
 /* Бекдроп */
