@@ -178,7 +178,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   padding: 200px 0;
 
@@ -630,7 +630,7 @@ header {
 }
 
 .subscribe {
-  margin-left: 93px;
+  margin-left: auto;
   color: var(--white);
   fill: var(--white);
 }
@@ -669,7 +669,6 @@ header {
   transition: border var(--action-time) var(--action-function);
 }
 
-.subscribe-input:hover,
 .subscribe-input:focus {
   border: 1px solid var(--hover-text-color);
 }
@@ -747,6 +746,7 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
+  cursor: pointer;
   fill: var(--title-text-color);
   transition: fill var(--action-time) var(--action-function);
 }
@@ -774,16 +774,16 @@ header {
   color: var(--title-text-color);
 }
 
-.modal-item {
+.modal-label {
   position: relative;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 
   fill: var(--title-text-color);
   transition: fill var(--action-time) var(--action-function);
 }
 
-.modal-item + .modal-item {
+.modal-label + .modal-label {
   margin-top: 10px;
 }
 
@@ -816,8 +816,6 @@ header {
   outline: transparent;
 
   cursor: pointer;
-  z-index: 10;
-
   transition: border var(--action-time) var(--action-function);
 }
 
@@ -834,14 +832,11 @@ header {
   resize: none;
 }
 
-.modal-input:hover + .icon,
 .modal-input:focus + .icon {
   fill: var(--hover-text-color);
 }
 
-.modal-input:hover,
 .modal-input:focus,
-.modal-textarea:hover,
 .modal-textarea:focus {
   border: 1px solid var(--hover-text-color);
 }
@@ -867,6 +862,7 @@ header {
   fill: var(--white);
   background-origin: border-box;
 
+  cursor: pointer;
   transition: fill var(--action-time) var(--action-function);
 }
 
