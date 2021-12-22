@@ -432,11 +432,11 @@ header {
   justify-content: center;
 }
 
-.filters-item + .filters-item {
+.filters__item + .filters__item {
   margin-left: 8px;
 }
 
-.button {
+.filters__button {
   display: inline-block;
   padding: 6px 22px;
   border: transparent;
@@ -456,15 +456,15 @@ header {
     box-shadow var(--action-time) var(--action-function);
 }
 
-.button:hover,
-.button:focus {
+.filters__button:hover,
+.filters__button:focus {
   color: var(--white);
   background-color: var(--hover-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-list {
+.projects__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
@@ -474,25 +474,25 @@ header {
   line-height: 1.87;
 }
 
-.projects-card {
+.projects__card {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
 }
 
-.projects-card .link {
+.projects__link {
   display: inline-block;
 
   transition: box-shadow var(--action-time) var(--action-function);
 }
 
-.projects-card .link:hover,
-.projects-card .link:focus {
+.projects__link:hover,
+.projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-list-title {
+.projects__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -503,19 +503,19 @@ header {
   color: var(--title-text-color);
 }
 
-.project-content {
+.projects__content {
   padding: 20px 24px;
   background: var(--white);
   border: 1px solid var(--border-color);
   box-sizing: border-box;
 }
 
-.project-actions {
+.projects__actions {
   position: relative;
   overflow: hidden;
 }
 
-.actions-overlay {
+.projects__overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -529,12 +529,12 @@ header {
   transition: transform var(--action-time) var(--action-function);
 }
 
-.projects-card .link:hover .actions-overlay,
-.projects-card .link:focus .actions-overlay {
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay {
   transform: translateY(0);
 }
 
-.project-actions-text {
+.projects__description {
   position: absolute;
   left: 50%;
   top: 50%;
