@@ -62,63 +62,67 @@
     <main>
       <!--Шапка-->
       <section class="hero">
-        <h1 class="hero-title">
+        <h1 class="hero__title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="action-button" type="button" data-modal-open>
+        <button
+          class="hero__button primary-button"
+          type="button"
+          data-modal-open
+        >
           Заказать услугу
         </button>
       </section>
       <!--Особенности-->
-      <section class="section peculiarities">
+      <section class="peculiarities section">
         <div class="container">
-          <h2 class="visually-hidden">Особенности</h2>
-          <ul class="peculiarities-list">
-            <li class="item">
-              <div class="icon-box">
-                <svg class="icon" width="70" height="70">
+          <h2 class="peculiarities__title visually-hidden">Особенности</h2>
+          <ul class="peculiarities__list">
+            <li class="peculiarities__item item">
+              <div class="peculiarities__box">
+                <svg class="peculiarities__icon" width="70" height="70">
                   <use href="./images/icons.svg#group1"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-list-title">Внимание к деталям</h3>
-              <p>
+              <h3 class="peculiarities__list__title">Внимание к деталям</h3>
+              <p class="peculiarities__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item">
-              <div class="icon-box">
-                <svg class="icon" width="70" height="70">
+            <li class="peculiarities__item item">
+              <div class="peculiarities__box">
+                <svg class="peculiarities__icon" width="70" height="70">
                   <use href="./images/icons.svg#group2"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-list-title">Пунктуальность</h3>
-              <p>
+              <h3 class="peculiarities__list__title">Пунктуальность</h3>
+              <p class="peculiarities__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
-              <div class="icon-box">
-                <svg class="icon" width="70" height="70">
+            <li class="peculiarities__item item">
+              <div class="peculiarities__box">
+                <svg class="peculiarities__icon" width="70" height="70">
                   <use href="./images/icons.svg#group3"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-list-title">Планирование</h3>
-              <p>
+              <h3 class="peculiarities__list__title">Планирование</h3>
+              <p class="peculiarities__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item">
-              <div class="icon-box">
-                <svg class="icon" width="70" height="70">
+            <li class="peculiarities__item item">
+              <div class="peculiarities__box">
+                <svg class="peculiarities__icon" width="70" height="70">
                   <use href="./images/icons.svg#group4"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-list-title">Современные технологии</h3>
-              <p>
+              <h3 class="peculiarities__list__title">Современные технологии</h3>
+              <p class="peculiarities__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -127,38 +131,38 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="section">
+      <section class="work section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="work">
-            <li class="item work-card">
+          <ul class="work__list">
+            <li class="work__card item">
               <img
                 src="./images/img1.jpg"
                 alt="Десктопные приложения"
                 width="370"
               />
-              <div class="work-overlay">
-                <p class="work-text">десктопные приложения</p>
+              <div class="work__overlay">
+                <p class="work__text">десктопные приложения</p>
               </div>
             </li>
-            <li class="item work-card">
+            <li class="work__card item">
               <img
                 src="./images/img2.jpg"
                 alt="Мобильные приложения"
                 width="370"
               />
-              <div class="work-overlay">
-                <p class="work-text">мобильные приложения</p>
+              <div class="work__overlay">
+                <p class="work__text">мобильные приложения</p>
               </div>
             </li>
-            <li class="item work-card">
+            <li class="work__card item">
               <img
                 src="./images/img3.jpg"
                 alt="Дизайнерские решения"
                 width="370"
               />
-              <div class="work-overlay">
-                <p class="work-text">дизайнерские решения</p>
+              <div class="work__overlay">
+                <p class="work__text">дизайнерские решения</p>
               </div>
             </li>
           </ul>
@@ -466,9 +470,9 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="action-button">
+            <button type="submit" class="primary-button">
               Подписаться
-              <svg class="action-button__icon" width="24" height="24">
+              <svg class="primary-button__icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>
@@ -527,7 +531,7 @@
             >
           </label>
           <div class="modal-submit-button">
-            <button type="submit" class="action-button">Отправить</button>
+            <button type="submit" class="primary-button">Отправить</button>
           </div>
         </form>
         <button type="button" class="modal-button" data-modal-close>
