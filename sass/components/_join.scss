@@ -4,8 +4,7 @@
   fill: var(--white);
 }
 
-.join__title,
-.subscribe__title {
+.join__title {
   display: block;
   margin-bottom: 20px;
 
@@ -33,9 +32,9 @@
   fill: var(--white);
 
   transition: background-color var(--action-time) var(--action-function);
-}
 
-.join__link:hover,
-.join__link:focus {
-  background-color: var(--hover-text-color);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-text-color);
+  }
 }

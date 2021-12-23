@@ -7,15 +7,15 @@
 
   color: var(--footer-text-color);
   transition: color var(--action-time) var(--action-function);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-text-color);
+  }
 }
 
 .map {
   color: var(--white);
-}
-
-.address__link:hover,
-.address__link:focus {
-  color: var(--hover-text-color);
 }
 
 .address__item + .address__item {

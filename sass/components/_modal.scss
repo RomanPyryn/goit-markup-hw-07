@@ -38,9 +38,9 @@
   cursor: pointer;
   fill: var(--title-text-color);
   transition: fill var(--action-time) var(--action-function);
-}
 
-.modal__button--close:hover,
-.modal__button--close:focus {
-  fill: var(--hover-text-color);
+  &:hover,
+  &:focus {
+    fill: var(--hover-text-color);
+  }
 }

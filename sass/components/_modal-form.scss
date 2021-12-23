@@ -59,6 +59,10 @@
 
   cursor: pointer;
   transition: border var(--action-time) var(--action-function);
+
+  &:focus {
+    border: 1px solid var(--hover-text-color);
+  }
 }
 
 .modal__textarea {
@@ -72,24 +76,23 @@
 
   cursor: pointer;
   resize: none;
+
+  &:focus {
+    border: 1px solid var(--hover-text-color);
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal__input:focus + .modal__icon {
   fill: var(--hover-text-color);
-}
-
-.modal__input:focus,
-.modal__textarea:focus {
-  border: 1px solid var(--hover-text-color);
-}
-
-.modal__textarea::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .label__textarea {
@@ -135,7 +138,7 @@
   color: var(--hover-text-color);
 }
 
-.modal__button--submit {
+.modal__button--thumb {
   display: flex;
   justify-content: center;
 

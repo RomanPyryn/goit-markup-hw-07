@@ -15,10 +15,10 @@
 
   transition: border var(--action-time) var(--action-function),
     fill var(--action-time) var(--action-function);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid var(--hover-text-color);
-  fill: var(--hover-text-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--hover-text-color);
+    fill: var(--hover-text-color);
+  }
 }

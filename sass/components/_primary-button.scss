@@ -18,12 +18,12 @@
 
   transition: background-color var(--action-time) var(--action-function),
     box-shadow var(--action-time) var(--action-function);
-}
 
-.primary-button:hover,
-.primary-button:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .primary-button__icon {

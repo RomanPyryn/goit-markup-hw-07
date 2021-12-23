@@ -15,12 +15,12 @@
 
   transition: background-color var(--action-time) var(--action-function),
     fill var(--action-time) var(--action-function);
-}
 
-.social-networks__link:hover,
-.social-networks__link:focus {
-  fill: var(--white);
-  background-color: var(--hover-text-color);
+  &:hover,
+  &:focus {
+    fill: var(--white);
+    background-color: var(--hover-text-color);
+  }
 }
 
 .social-networks__item + .social-networks__item {

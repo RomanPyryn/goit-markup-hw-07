@@ -4,9 +4,17 @@
   fill: var(--white);
 }
 
+.subscribe__title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
 .subscribe__form {
   display: flex;
-  margin-top: 20px;
 }
 
 .subscribe__label {
@@ -36,17 +44,17 @@
 
   cursor: pointer;
   transition: border var(--action-time) var(--action-function);
-}
 
-.subscribe__input:focus {
-  border: 1px solid var(--hover-text-color);
-}
+  &:focus {
+    border: 1px solid var(--hover-text-color);
+  }
 
-.subscribe__input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
