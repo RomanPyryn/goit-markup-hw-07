@@ -16,8 +16,8 @@
   </head>
   <body>
     <!--Верхняя линия-->
-    <header>
-      <div class="container header">
+    <header class="header">
+      <div class="container header__container">
         <a class="logo link" href="./index.html"
           >Web<span class="logo__part--black">Studio</span></a
         >
@@ -75,53 +75,53 @@
         </button>
       </section>
       <!--Особенности-->
-      <section class="peculiarities section">
+      <section class="section">
         <div class="container">
-          <h2 class="peculiarities__title visually-hidden">Особенности</h2>
-          <ul class="peculiarities__list">
-            <li class="peculiarities__item item">
+          <h2 class="section__title visually-hidden">Особенности</h2>
+          <ul class="peculiarities">
+            <li class="peculiarities__item">
               <div class="peculiarities__box">
                 <svg class="peculiarities__icon" width="70" height="70">
                   <use href="./images/icons.svg#group1"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities__name">Внимание к деталям</h3>
+              <h3 class="peculiarities__title">Внимание к деталям</h3>
               <p class="peculiarities__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="peculiarities__item item">
+            <li class="peculiarities__item">
               <div class="peculiarities__box">
                 <svg class="peculiarities__icon" width="70" height="70">
                   <use href="./images/icons.svg#group2"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities__name">Пунктуальность</h3>
+              <h3 class="peculiarities__title">Пунктуальность</h3>
               <p class="peculiarities__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="peculiarities__item item">
+            <li class="peculiarities__item">
               <div class="peculiarities__box">
                 <svg class="peculiarities__icon" width="70" height="70">
                   <use href="./images/icons.svg#group3"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities__name">Планирование</h3>
+              <h3 class="peculiarities__title">Планирование</h3>
               <p class="peculiarities__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="peculiarities__item item">
+            <li class="peculiarities__item">
               <div class="peculiarities__box">
                 <svg class="peculiarities__icon" width="70" height="70">
                   <use href="./images/icons.svg#group4"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities__name">Современные технологии</h3>
+              <h3 class="peculiarities__title">Современные технологии</h3>
               <p class="peculiarities__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -131,11 +131,11 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="work section">
+      <section class="section section__no-padding-top">
         <div class="container">
-          <h2 class="work__title section__title">Чем мы занимаемся</h2>
-          <ul class="work__list">
-            <li class="work__card item">
+          <h2 class="section__title">Чем мы занимаемся</h2>
+          <ul class="work">
+            <li class="work__item">
               <img
                 src="./images/img1.jpg"
                 alt="Десктопные приложения"
@@ -145,7 +145,7 @@
                 <p class="work__text">десктопные приложения</p>
               </div>
             </li>
-            <li class="work__card item">
+            <li class="work__item">
               <img
                 src="./images/img2.jpg"
                 alt="Мобильные приложения"
@@ -155,7 +155,7 @@
                 <p class="work__text">мобильные приложения</p>
               </div>
             </li>
-            <li class="work__card item">
+            <li class="work__item">
               <img
                 src="./images/img3.jpg"
                 alt="Дизайнерские решения"
@@ -169,11 +169,11 @@
         </div>
       </section>
       <!--Наша команда-->
-      <section class="team section">
+      <section class="section section__other-bg">
         <div class="container">
-          <h2 class="team__title section__title">Наша команда</h2>
-          <ul class="team__list">
-            <li class="team__card item">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team">
+            <li class="team__item">
               <img
                 class="team__img"
                 src="./images/img4.jpg"
@@ -181,7 +181,7 @@
                 width="270"
               />
               <div class="team__content">
-                <h3 class="team__unit">Игорь Демьяненко</h3>
+                <h3 class="team__title">Игорь Демьяненко</h3>
                 <p>Product Designer</p>
                 <ul class="social-networks">
                   <li class="social-networks__item">
@@ -215,7 +215,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__card item">
+            <li class="team__item">
               <img
                 class="team__img"
                 src="./images/img5.jpg"
@@ -223,7 +223,7 @@
                 width="270"
               />
               <div class="team__content">
-                <h3 class="team__unit">Ольга Репина</h3>
+                <h3 class="team__title">Ольга Репина</h3>
                 <p>Frontend Developer</p>
                 <ul class="social-networks">
                   <li class="social-networks__item">
@@ -257,7 +257,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__card item">
+            <li class="team__item">
               <img
                 class="team__img"
                 src="./images/img6.jpg"
@@ -265,7 +265,7 @@
                 width="270"
               />
               <div class="team__content">
-                <h3 class="team__unit">Николай Тарасов</h3>
+                <h3 class="team__title">Николай Тарасов</h3>
                 <p>Marketing</p>
                 <ul class="social-networks">
                   <li class="social-networks__item">
@@ -299,7 +299,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__card item">
+            <li class="team__item">
               <img
                 class="team__img"
                 src="./images/img7.jpg"
@@ -307,7 +307,7 @@
                 width="270"
               />
               <div class="team__content">
-                <h3 class="team__unit">Михаил Ермаков</h3>
+                <h3 class="team__title">Михаил Ермаков</h3>
                 <p>UI Designer</p>
                 <ul class="social-networks">
                   <li class="social-networks__item">
@@ -345,46 +345,46 @@
         </div>
       </section>
       <!-- Постоянные клиенты -->
-      <section class="clients section">
+      <section class="section">
         <div class="container">
-          <h2 class="clients__title section__title">Постоянные клиенты</h2>
-          <ul class="clients__list">
-            <li class="clients__item item">
+          <h2 class="section__title">Постоянные клиенты</h2>
+          <ul class="clients">
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#logo1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item item">
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#logo2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item item">
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#logo3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item item">
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#logo4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item item">
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#logo5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item item">
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#logo6"></use>

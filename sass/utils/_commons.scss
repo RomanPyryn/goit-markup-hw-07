@@ -56,6 +56,14 @@ body {
   padding-bottom: 94px;
 }
 
+.section__no-padding-top {
+  padding-top: 0;
+}
+
+.section__other-bg {
+  background-color: var(--secondary-bg);
+}
+
 .section__title {
   margin-bottom: var(--title-gap);
 
@@ -75,8 +83,4 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}
-
-.item + .item {
-  margin-left: var(--card-set-gap);
 }

@@ -1,8 +1,4 @@
 .team {
-  background-color: var(--secondary-bg);
-}
-
-.team__list {
   display: flex;
 
   font-size: 16px;
@@ -10,7 +6,7 @@
   text-align: center;
 }
 
-.team__card {
+.team__item {
   background: var(--white);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -18,7 +14,11 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__unit {
+.team__item + .team__item {
+  margin-left: var(--card-set-gap);
+}
+
+.team__title {
   margin-bottom: 10px;
   font-weight: 500;
 

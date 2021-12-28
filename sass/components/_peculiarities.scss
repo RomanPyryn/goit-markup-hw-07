@@ -1,8 +1,4 @@
 .peculiarities {
-  padding-bottom: 0;
-}
-
-.peculiarities__list {
   display: flex;
 }
 
@@ -10,7 +6,11 @@
   width: 270px;
 }
 
-.peculiarities__name {
+.peculiarities__item + .peculiarities__item {
+  margin-left: var(--card-set-gap);
+}
+
+.peculiarities__title {
   margin-top: var(--card-set-gap);
   margin-bottom: 10px;
   font-weight: 700;

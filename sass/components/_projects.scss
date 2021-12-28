@@ -1,4 +1,4 @@
-.projects__list {
+.projects {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
@@ -61,11 +61,11 @@
 
   transform: translateY(101%);
   transition: transform var(--action-time) var(--action-function);
-}
 
-.projects__link:hover .projects__overlay,
-.projects__link:focus .projects__overlay {
-  transform: translateY(0);
+  .projects__link:hover &,
+  .projects__link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .projects__description {

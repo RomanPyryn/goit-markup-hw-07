@@ -1,9 +1,13 @@
-.work__list {
+.work {
   display: flex;
 }
 
-.work__card {
+.work__item {
   position: relative;
+}
+
+.work__item + .work__item {
+  margin-left: var(--card-set-gap);
 }
 
 .work__overlay {
